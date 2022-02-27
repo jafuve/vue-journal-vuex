@@ -31,6 +31,7 @@ export default {
     },
     computed: {
         shortText(){
+            console.log(this.entry)
             return ( this.entry.text.length  > 130) 
                     ? this.entry.text.substring(0,130) + "..."
                     :this.entry.text
